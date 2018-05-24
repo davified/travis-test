@@ -1,0 +1,14 @@
+language: generic
+jobs:
+  include:
+  - stage: unit tests
+    script:
+    - ./a.sh
+  - stage: staging
+    if: branch = staging
+    script:
+    - ./b.sh
+  - stage: prod
+    if: branch = prod
+    script:
+    - ./c.sh
