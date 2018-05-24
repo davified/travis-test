@@ -5,7 +5,7 @@ jobs:
     script:
     - ./a.sh
   - stage: staging
-    if: branch = staging
+    if: branch = staging or branch = prod
     script:
     - ./b.sh
   - stage: prod
