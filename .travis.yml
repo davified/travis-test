@@ -3,13 +3,16 @@ jobs:
   include:
   - stage: unit tests
     script:
-    - ./x.sh
-    - ./a.sh
+    - "./x.sh"
+    - "./a.sh"
   - stage: staging
     if: branch = staging or branch = prod
     script:
-    - ./b.sh
+    - "./b.sh"
   - stage: prod
     if: branch = prod
     script:
-    - ./c.sh
+    - "./c.sh"
+env:
+  global:
+    secure: ZGnTP2sToAAbZOtp0Z1MYHOcnKhthRko1talkOcAdlMqTdZjcohOwvgYhV46h2dXJXqJL6fg4Q9s5peW3D4hU5/o3u3HAA1RMB4NVPxJO0CvEVtkVjtAoJkqtNnZS4YcgeYUXoPpN2aMK2Pdhcx3dGTsOJ+Jezuhpcj+qqbBdPtKOJulM9YqG593k9Om5nA72j5FMDkJ1SxcTQLyoS0Hn4A9U89IH8DK72Vr2/Avv/prycOECKCdWGhJuRvm4UEuhs6U2ELbXHmK6jB9KVi0XD57t3wrLglbdMmRf1BiwGO+G1iCvYZ7ub66brz3my0WxBULkYrIFEmEVGr1tQ3WP06yHim7gYZMX/EH+pq/C54raMZiivQ8y9m1dS6qnXyN5K04S/+lZ1LuCsKyGyPd4bmKSyJcB2YcaL8Y0no5NDJq5rfvjePwt2Wl2vPnJ9FGyWVQibua2SQkr294huN1drF5+RMMum8Mo+d2VFZJBH2gghgays+s/wzZJ1IzIwQWo3IFI1cTxN4Gs1R+qPyogEaNIXro8fnxzVhNc67XFkYSxJlk61eE/9JrbbtAqbYjB5yZ8xFxWierjSY61+EUK6FfYSUhEOaI3HojBUMuDmtxEOAM+vmwrRgF3Ny43bnh+E0CHNrD1Cr/iS2PReEIpxjyWqLKCIthD+vN55uebjY=
