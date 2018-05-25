@@ -3,7 +3,7 @@ jobs:
   include:
   - stage: unit tests
     script:
-    - ./a.sh
+    - ./x.sh
   - stage: staging
     if: branch = staging or branch = prod
     script:
