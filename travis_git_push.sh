@@ -15,7 +15,7 @@ git_add_and_commit() {
   git add .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
 }
-https://github.com/
+
 git_push() {
   git remote set-url origin https://${GH_TOKEN}@github.com/davified/travis-test.git > /dev/null 2>&1
   git push --quiet origin master 
