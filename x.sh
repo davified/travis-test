@@ -9,3 +9,5 @@ if (( $(echo "$num1 > $num2" | bc -l) )); then
 else
   echo "num2 is larger than num1"
 fi
+
+exit 1

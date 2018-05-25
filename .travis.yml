@@ -4,6 +4,7 @@ jobs:
   - stage: unit tests
     script:
     - ./x.sh
+    - ./a.sh
   - stage: staging
     if: branch = staging or branch = prod
     script:
