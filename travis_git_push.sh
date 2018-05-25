@@ -7,10 +7,6 @@ setup_git() {
   git config --global user.name "Travis CI"
 }
 
-git_clone() {
-
-}
-
 git_add_and_commit() {
   git add .
   git commit --message "Travis build: $TRAVIS_BUILD_NUMBER"
